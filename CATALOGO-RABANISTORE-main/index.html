@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Rabanistore | Catálogo</title>
+    <meta name="description" content="Catálogo de maquillaje Rabanistore">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="announcement">Belleza que se siente como tú ✦ Descubre Rabanistore</div>
+    <header><a class="brand" href="#"><span class="mark">R</span><span><b>RABANISTORE</b><small>RABANISTORE · BEAUTY &
+                    MORE</small></span></a>
+        <button id="menu" aria-label="Menú">☰</button>
+        <nav id="nav"><a href="#catalogo">Catálogo</a><a href="#nosotros">Nosotros</a><button id="cartButton"
+                class="navbtn cart-button" type="button">Bolsa (<span id="cartCount">0</span>)</button><a class="navbtn"
+                href="https://www.instagram.com/rabanistore/" target="_blank">Instagram ↗</a></nav>
+    </header>
+    <main>
+        <section class="hero">
+            <div><span class="eyebrow">TU BEAUTY CORNER</span>
+                <h1>Un toque de color,<br><em>mucho de ti.</em></h1>
+                <p>Encuentra tus favoritos de maquillaje. Explora productos, descubre sus tonos y elige el que va
+                    contigo.</p><a class="button" href="#catalogo">Explorar catálogo ↘</a>
+                <div class="note">✿ Tu belleza, a tu manera.</div>
+            </div>
+            <div class="art">
+                <div class="orb"></div>
+                <div class="orb2"></div>
+                <div class="pack">RABANISTORE<small>BEAUTY EDIT</small></div><span class="spark s1">✦</span><span
+                    class="spark s2">✧</span><span class="caption">made with<br>love ♡</span>
+            </div>
+        </section>
+        <section id="catalogo" class="catalog">
+            <div class="heading">
+                <div><span class="eyebrow">DESCUBRE TU FAVORITO</span>
+                    <h2>El catálogo</h2>
+                </div>
+                <p>Pequeños detalles que<br>hacen la diferencia.</p>
+            </div>
+            <div class="toolbar">
+                <div id="filters" aria-label="Filtrar por categoría"></div>
+                <label class="search">⌕ <input id="search" placeholder="Buscar producto..."></label>
+            </div>
+            <div id="products" class="grid"></div>
+            <section class="recent-section" aria-labelledby="recentTitle">
+                <div class="recent-heading"><h3 id="recentTitle">Vistos recientemente</h3>
+                    <button id="undoVisit" class="text-button" type="button">Deshacer última visita</button></div>
+                <div id="recentlyViewed" class="mini-products"></div>
+            </section>
+        </section>
+        <section id="nosotros" class="about"><span class="flower">✿</span>
+            <div><span class="eyebrow">UN ESPACIO PARA TI</span>
+                <h2>Tu estilo.<br><em>Tus reglas.</em></h2>
+            </div>
+            <p>En Rabanistore creemos que el maquillaje es una forma de expresión. Explora, combina y encuentra los
+                tonos que cuentan tu historia.</p><a href="https://www.instagram.com/rabanistore/"
+                target="_blank">Síguenos en Instagram ↗</a>
+        </section>
+    </main>
+    <footer><b>RABANISTORE</b><span>Hecho con cariño ♡</span><a href="https://www.instagram.com/rabanistore/"
+            target="_blank">@rabanistore</a></footer>
+    <dialog id="detail"><button class="close" aria-label="Cerrar">×</button>
+        <div id="detailImage" class="detail-image"></div>
+        <div class="detail-info"><span id="detailCat" class="eyebrow"></span>
+            <h2 id="detailName"></h2>
+            <p id="detailDesc"></p>
+            <h3>Selecciona un tono</h3>
+            <div id="shades" class="shades"></div>
+            <p id="selectedShade"></p>
+            <div class="detail-actions"><button id="addToCart" class="button" type="button">Agregar a la bolsa</button>
+                <a id="consultInstagram" class="button secondary-button" href="https://www.instagram.com/rabanistore/"
+                    target="_blank" rel="noopener">Consultar por Instagram ↗</a></div>
+            <section class="recommendation-section"><h3>También te puede gustar</h3>
+                <div id="recommendations" class="mini-products"></div></section>
+        </div>
+    </dialog>
+    <dialog id="cartDialog" class="cart-dialog">
+        <button id="closeCart" class="close" aria-label="Cerrar bolsa">×</button>
+        <div class="cart-content"><span class="eyebrow">TU SELECCIÓN</span><h2>Mi bolsa</h2>
+            <ul id="cartItems" class="cart-items"></ul>
+            <p id="cartTotal" class="cart-total"></p>
+            <button id="generateReceipt" class="button" type="button">Generar recibo PNG</button>
+            <a id="downloadReceipt" class="button secondary-button" hidden download>Descargar recibo ↧</a>
+            <p id="receiptHint" class="empty-note">Genera y descarga tu recibo; luego adjunta la imagen en un mensaje directo de Instagram.</p>
+            <a id="cartInstagram" class="button" href="https://www.instagram.com/rabanistore/"
+                target="_blank" rel="noopener">Abrir Instagram ↗</a>
+        </div>
+    </dialog>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,91 @@
+:root{--pink:#e8c8ce;--deep:#b76e79;--nude:#f4e9e2;--cream:#fff9f5;--brown:#6d514b;--muted:#8b7771;--line:#eadbd5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--brown);font-family:"DM Sans",sans-serif}a{color:inherit;text-decoration:none}
+.announcement{text-align:center;background:var(--brown);color:#fff9f5;padding:9px;font-size:11px;letter-spacing:.08em}
+header{height:80px;padding:0 7%;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;background:#fff9f5ed;z-index:5;border-bottom:1px solid #f0e5df;backdrop-filter:blur(10px)}
+.brand{display:flex;align-items:center;gap:11px}.mark{width:42px;height:42px;border:1px solid var(--deep);border-radius:50%;display:grid;place-items:center;font:26px "Playfair Display";color:var(--deep)}.brand b{display:block;font-size:14px;letter-spacing:.18em}.brand small{display:block;font-size:8px;letter-spacing:.2em;color:var(--muted);margin-top:3px}
+nav{display:flex;align-items:center;gap:32px;font-size:12px}.navbtn{background:var(--pink);padding:12px 19px;border-radius:30px}#menu{display:none}
+.hero{min-height:475px;padding:65px 10%;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:30px;background:linear-gradient(110deg,var(--cream) 50%,var(--nude) 50%)}
+.eyebrow{font-size:9px;letter-spacing:.23em;color:var(--deep);font-weight:700}h1,h2{font-family:"Playfair Display",serif;font-weight:500}h1{font-size:clamp(42px,5vw,67px);line-height:1.08;margin:18px 0}h1 em,h2 em{color:var(--deep)}.hero p{max-width:410px;line-height:1.8;font-size:13px;color:var(--muted);margin-bottom:27px}
+.button{display:inline-block;background:var(--brown);color:white;border-radius:30px;padding:14px 21px;font-size:11px;transition:.2s}.button:hover{background:var(--deep);transform:translateY(-2px)}.note{font:italic 13px "Playfair Display";color:var(--muted);margin-top:27px}
+.art{height:330px;position:relative;display:grid;place-items:center}.orb,.orb2{position:absolute;border-radius:50%}.orb{width:280px;height:280px;background:var(--pink);right:12%;top:5%}.orb2{width:180px;height:180px;background:#d9b6a9;right:27%;top:28%;opacity:.8}.pack{z-index:1;background:var(--cream);width:185px;height:225px;display:grid;place-content:center;text-align:center;box-shadow:0 18px 45px #8e655322;font:28px "Playfair Display";letter-spacing:.13em;transform:rotate(-7deg)}.pack small{font:8px "DM Sans";letter-spacing:.3em;margin-top:8px}.spark{position:absolute;color:var(--deep);font-size:28px}.s1{top:5%;left:17%}.s2{right:5%;top:30%;font-size:36px}.caption{position:absolute;right:4%;bottom:7%;font:italic 15px "Playfair Display";transform:rotate(8deg)}
+.catalog{padding:78px 8% 90px}.heading{display:flex;justify-content:space-between;align-items:end;margin-bottom:32px}.heading h2{font-size:42px;margin:8px 0}.heading p{font:italic 14px/1.6 "Playfair Display";color:var(--muted);margin:0 5% 4px 0}
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-bottom:27px}#filters{display:flex;gap:8px;flex-wrap:wrap}.filter{border:1px solid var(--line);background:transparent;border-radius:30px;padding:10px 15px;font:11px "DM Sans";color:var(--brown);cursor:pointer}.filter.active,.filter:hover{background:var(--pink);border-color:var(--pink)}.search{border-bottom:1px solid #d7c5bd;padding:7px;color:var(--deep)}.search input{border:0;outline:0;background:transparent;font:11px "DM Sans";width:150px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px 22px}.card{cursor:pointer}.photo{height:270px;background:linear-gradient(145deg,#f5e7e2,#ead0d2);position:relative;display:grid;place-items:center;overflow:hidden}
+.photo {
+    height: 270px;
+    background: linear-gradient(145deg, #f5e7e2, #ead0d2);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.photo img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+    object-position: center;
+    padding: 10px;
+    margin: auto;
+}
+.placeholder{font:italic 16px "Playfair Display";color:#a77b7b;text-align:center;padding:25px}.placeholder small{display:block;font:8px "DM Sans";letter-spacing:.2em;margin-top:10px}.tag{position:absolute;top:13px;left:13px;background:#fff9f5df;padding:7px 10px;font-size:8px;letter-spacing:.14em}.quick{position:absolute;bottom:13px;left:50%;transform:translateX(-50%);background:#fff9f5ed;border:0;border-radius:30px;padding:10px 16px;font:10px "DM Sans";color:var(--brown);white-space:nowrap}.meta{padding:14px 3px}.meta small{font-size:8px;letter-spacing:.17em;color:var(--deep);text-transform:uppercase}.meta h3{font:17px "Playfair Display";margin:7px 0}.meta p{font-size:10px;color:var(--muted);margin:0}
+.about{background:var(--nude);padding:60px 12%;display:grid;grid-template-columns:auto 1fr 1.1fr;gap:24px;align-items:center}.flower{font-size:44px;color:var(--deep)}.about h2{font-size:38px;margin:8px 0}.about p{font-size:12px;line-height:1.9;color:var(--muted)}.about>a{grid-column:3;font-size:11px;color:var(--deep);border-bottom:1px solid var(--deep);width:max-content;padding-bottom:5px}
+footer{padding:24px 8%;display:flex;justify-content:space-between;font-size:10px;color:var(--muted)}footer b{font:14px "Playfair Display";letter-spacing:.15em;color:var(--brown)}
+dialog{width:min(850px,92vw);border:0;border-radius:8px;padding:0;background:var(--cream);color:var(--brown);box-shadow:0 20px 90px #49363244}dialog[open]{display:grid;grid-template-columns:1fr 1fr}dialog::backdrop{background:#35252299;backdrop-filter:blur(3px)}.close{position:absolute;right:14px;top:8px;border:0;background:transparent;font-size:29px;cursor:pointer;color:var(--brown)}.detail-image{min-height:420px;background:linear-gradient(145deg,var(--nude),var(--pink));display:grid;place-items:center}.detail-image img{width:100%;height:100%;max-height:500px;object-fit:contain;padding:24px}.detail-info{padding:52px 35px 30px}.detail-info h2{font-size:27px;margin:10px 0}.detail-info p{font-size:11px;line-height:1.7;color:var(--muted)}.detail-info h3{font-size:11px;letter-spacing:.1em;margin-top:24px}.shades{display:flex;gap:8px;flex-wrap:wrap}.shade{border:1px solid var(--line);border-radius:30px;background:transparent;padding:9px 12px;font:10px "DM Sans";color:var(--brown);cursor:pointer}.shade.selected,.shade:hover{background:var(--pink);border-color:var(--pink)}
+@media(max-width:760px){header{height:70px;padding:0 5%}#menu{display:block;border:0;background:none;font-size:24px;color:var(--brown)}nav{display:none;position:absolute;top:70px;left:0;right:0;background:var(--cream);padding:20px;flex-direction:column}nav.open{display:flex}.hero{grid-template-columns:1fr;padding:50px 8% 30px;background:linear-gradient(180deg,var(--cream) 0 53%,var(--nude) 53%)}.art{height:260px}.orb{width:220px;height:220px}.orb2{width:145px;height:145px}.pack{width:150px;height:180px;font-size:23px}.catalog{padding:55px 6%}.heading{align-items:start}.heading h2{font-size:35px}.heading p{font-size:12px}.toolbar{align-items:start;flex-direction:column}.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:20px 12px}.photo{height:205px}.meta h3{font-size:15px}.about{padding:42px 8%;grid-template-columns:auto 1fr}.about p,.about>a{grid-column:1/-1}dialog[open]{grid-template-columns:1fr}.detail-image{min-height:240px;max-height:280px}.detail-info{padding:28px 24px}footer{padding:20px 6%;gap:12px;flex-wrap:wrap}}
+@media(max-width:420px){.photo{height:170px}.heading p{display:none}.filter{padding:9px 11px}}
+
+
+/* Centrar las imágenes de los productos */
+.product-card img,
+.product-image img,
+#detailImage img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center center;
+    margin: auto;
+}
+
+/* Centrar el contenido del espacio de imagen */
+#detailImage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Funcionalidades conectadas al backend Python */
+.cart-button{border:0;color:var(--brown);font:inherit;cursor:pointer}
+.meta h4{font-size:12px;margin:0 0 8px;color:var(--brown)}
+.recent-section{margin-top:42px;border-top:1px solid var(--line);padding-top:20px}
+.recent-heading{display:flex;align-items:center;justify-content:space-between}
+.recent-heading h3,.recommendation-section h3{font:18px "Playfair Display";margin:0 0 14px}
+.text-button{border:0;background:none;color:var(--deep);text-decoration:underline;cursor:pointer;font:11px "DM Sans"}
+.mini-products{display:flex;gap:12px;overflow-x:auto;padding:2px 0 10px}
+.mini-product{flex:0 0 132px;min-width:0;display:flex;flex-direction:column;align-items:flex-start;gap:7px;padding:9px;border:1px solid var(--line);border-radius:6px;background:#fffaf7;color:var(--brown);text-align:left;cursor:pointer}
+.mini-product:hover{border-color:var(--deep);transform:translateY(-2px)}
+.mini-product img{width:100%;height:90px;object-fit:contain;background:var(--nude);border-radius:3px}
+.mini-product .placeholder{width:100%;height:90px;display:grid;place-content:center;background:var(--nude);font-size:12px;padding:8px}
+.mini-product span{font:13px "Playfair Display"}.mini-product small{font-size:10px;color:var(--deep)}
+.empty-note,.api-message{font-size:11px;color:var(--muted)}.api-message{grid-column:1/-1;color:#9b3b3b}
+.detail-info h2{line-height:1.35}.detail-actions{display:flex;flex-wrap:wrap;gap:8px}.secondary-button{background:var(--pink);color:var(--brown)}
+.recommendation-section{margin-top:22px}.recommendation-section h3{font-size:16px}.recommendation-section .mini-product{flex-basis:100px;padding:6px}.recommendation-section .mini-product img,.recommendation-section .mini-product .placeholder{height:64px}.recommendation-section .mini-product span{font-size:11px}
+.cart-dialog{width:min(520px,92vw);max-height:85vh;overflow:auto;padding:34px;background:var(--cream)}.cart-dialog[open]{display:block}.cart-content h2{font:30px "Playfair Display";margin:8px 0 20px}
+.cart-items{list-style:none;margin:0;padding:0}.cart-item{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 0;border-bottom:1px solid var(--line)}.cart-item b,.cart-item small{display:block}.cart-item b{font:14px "Playfair Display"}.cart-item small{font-size:10px;color:var(--muted);margin-top:5px}.remove-cart-item{border:0;background:none;color:var(--deep);font-size:23px;cursor:pointer}.cart-total{font-weight:700;margin:18px 0}
+@media(max-width:760px){.detail-actions .button{font-size:10px;padding:12px 14px}.cart-dialog{padding:28px 22px}}
+
+/* Evita que el carrusel de recomendaciones reduzca la columna de la imagen. */
+#detail[open]{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+#detail .detail-image,#detail .detail-info{min-width:0}
+#detail .detail-image{display:flex;align-items:center;justify-content:center;overflow:hidden}
+#detailImage img{display:block;width:100%;height:auto;max-height:min(70vh,600px);object-fit:contain;object-position:center;margin:auto}
+#detail .recommendation-section,#detail #recommendations{min-width:0;max-width:100%}
+#detail #recommendations{overflow-x:auto}
+@media(max-width:760px){#detail[open]{grid-template-columns:minmax(0,1fr)}#detail .detail-image{min-height:240px;max-height:280px}#detailImage img{max-width:min(100%,320px);max-height:240px;padding:16px}}
+#downloadReceipt[hidden]{display:none}
+#generateReceipt:disabled{opacity:.65;cursor:wait}

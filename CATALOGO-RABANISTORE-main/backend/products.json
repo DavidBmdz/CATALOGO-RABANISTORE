@@ -1,0 +1,125 @@
+[
+  {
+    "id": "blush elf", "cat": "rubores", "label": "Rubores", "name": "e.l.f. Blush",
+    "desc": "Le Rose Aux Joues. Un toque de color para darle vida a tu look.",
+    "img": "ELF BLUSH Le Rose Aux Joues.png", "price": 350,
+    "shades": [{"name": "Le Rose Aux Joues", "img": "ELF BLUSH Le Rose Aux Joues.png"}]
+  },
+  {
+    "id": "camo", "cat": "correctores", "label": "Correctores", "name": "e.l.f. Hydrating Camo Concealer",
+    "desc": "Corrector hidratante con acabado satinado.",
+    "img": "ELF HYDRATING CAMO CORRECTOR DEEP CHESTNUT.webp", "price": 350,
+    "shades": [
+      {"name": "Deep Chestnut", "img": "ELF HYDRATING CAMO CORRECTOR DEEP CHESTNUT.webp"},
+      {"name": "Deep Olive", "img": "ELF HYDRATING CAMO CORRECTOR DEEP OLIVE.webp"},
+      {"name": "Medium Beige", "img": "ELF HYDRATING CAMO CORRECTOR MEDIUM BEIGE.webp"},
+      {"name": "Tan Neutral", "img": "ELF HYDRATING CAMO CONCEALER TAN NEUTRAL.webp"},
+      {"name": "Fair Beige", "img": "ELF HYDRATING CAMO CORRECTOR FAIR BEIGE.webp"}
+    ]
+  },
+  {
+    "id": "stick", "cat": "rostro", "label": "Rostro", "name": "e.l.f. Monochromatic Multi-Stick",
+    "desc": "Multi-stick en el tono Sparkling Rose.",
+    "img": "ELF MULTI STICK SPARKLING ROSE.webp", "price": 340,
+    "shades": [{"name": "Sparkling Rose", "img": "ELF MULTI STICK SPARKLING ROSE.webp"}]
+  },
+  {
+    "id": "infallible", "cat": "correctores", "label": "Correctores", "name": "L'Oréal Infallible Full Wear Concealer",
+    "desc": "Corrector de alta cobertura, hasta 24 horas.",
+    "img": "LOREAL CORRECTOR EGGSHELL 325.png", "price": 350,
+    "shades": [{"name": "Eggshell 325", "img": "LOREAL CORRECTOR EGGSHELL 325.png"}]
+  },
+  {
+    "id": "glotion", "cat": "rostro", "label": "Rostro", "name": "L'Oréal Lumi Glotion",
+    "desc": "Iluminador líquido para un brillo natural.",
+    "img": "LOREAL LUMI GLOTION.png", "price": 360,
+    "shades": [{"name": "901 Fair Glow", "img": "LOREAL LUMI GLOTION.png"}]
+  },
+  {
+    "id": "lip", "cat": "labios", "label": "Labios", "name": "L'Oréal Hyaluron Tint Lip Stain Serum",
+    "desc": "Tinta para labios con sérum de ácido hialurónico.",
+    "img": "LOREAL TINTA BORDEAUX PLEASE 521.png", "price": 330,
+    "shades": [
+      {"name": "Bordeaux Please 521", "img": "LOREAL TINTA BORDEAUX PLEASE 521.png"},
+      {"name": "Tea Time 640", "img": "LOREAL TINTA TEA TIME 640.png"},
+      {"name": "Worth It Medium 635", "img": "LOREAL TINTA WORTH IT MEDIUM 635.png"}
+    ]
+  },
+  {
+    "id": "iv", "cat": "labios", "label": "Labios", "name": "Nyx Lip Iv",
+    "desc": "Tinta Nyx Lip Iv.", "img": "NYX LIP IV MAGENTA MIST 19.webp", "price": 330,
+    "shades": [{"name": "Magenta Mist 19", "img": "NYX LIP IV MAGENTA MIST 19.webp"}]
+  },
+  {
+    "id": "polvo", "cat": "rostro", "label": "Rostro", "name": "Wet n Wild Polvo Suelto",
+    "desc": "Polvo descripcion.", "img": "WET N WILD POLVO.webp", "price": 370,
+    "shades": [
+      {"name": "Translucido", "img": "WET N WILD POLVO.webp"},
+      {"name": "Soft Pink", "img": "WET N WILD POLVO SOFT PINK.webp"}
+    ]
+  },
+  {
+    "id": "tinta elf", "cat": "labios", "label": "Labios", "name": "e.l.f. Sheer For It Blush & Lip Tint",
+    "desc": "Polvo suelto translúcido de textura sedosa que sella el maquillaje, controla el brillo durante todo el día y suaviza la piel con un acabado mate natural.",
+    "img": "TINTA ELF PINK POSITIVE.webp", "price": 370,
+    "shades": [
+      {"name": "Pink Positive", "img": "TINTA ELF PINK POSITIVE.webp"},
+      {"name": "Cherry Cola", "img": "TINTA ELF CHERRY COLA.webp"},
+      {"name": "Orange Crush", "img": "TINTA ELF ORANGE CRUSH.webp"}
+    ]
+  },
+  {
+    "id": "master primer", "cat": "rostro", "label": "Rostro", "name": "Maybelline Master Primer",
+    "desc": "Prebase fluida que corrige el tono, alisa la textura de la piel y prolonga la duración del maquillaje con una sensación ligera y no grasosa.",
+    "img": "MAYBELLINE MASTER PRIMER VERDE.png", "price": 320,
+    "shades": [
+      {"name": "300", "img": "MAYBELLINE MASTER PRIMER VERDE.png"},
+      {"name": "400", "img": "MAYBELLINE MASTER PRIMER NEGRO.png"}
+    ]
+  },
+  {
+    "id": "blush loreal", "cat": "rubores", "label": "Rubores", "name": "Lóreal True Match Blush",
+    "desc": "Rubor en polvo compacto de textura ultrafina que se funde naturalmente con el tono de la piel, aportando un toque de color saludable y luminoso de intensidad modulable.",
+    "img": "LOREAL TRUE MATCH BLUSH C1-2.png", "price": 350,
+    "shades": [{"name": "Baby Blossom C1-2", "img": "LOREAL TRUE MATCH BLUSH C1-2.png"}]
+  },
+  {
+    "id": "fat matte", "cat": "labios", "label": "Labios", "name": "NYX Fat Matte Lipstick",
+    "desc": "Labial en barra con bálsamo integrado que aporta color intenso de acabado mate aterciopelado, hidratando los labios sin resecarlos ni cuartearse.",
+    "img": "NYX FAT MATTE BLUSH BLANKET 12.avif", "price": 330,
+    "shades": [
+      {"name": "Blush Blanket 12", "img": "NYX FAT MATTE BLUSH BLANKET 12.avif"},
+      {"name": "Pink Puff 11", "img": "NYX FAT MATTE BLUSH PINK PUFF 11.avif"},
+      {"name": "Toasty Taupe 08", "img": "NYX FAT MATTE TOASTY TAUPE 08.avif"}
+    ]
+  },
+  {
+    "id": "teddy tint", "cat": "labios", "label": "Labios", "name": "Maybelline Super Stay Teddy Tint Liquid Lip Tint",
+    "desc": "Tinta labial líquida de textura esponjosa que ofrece un acabado mate difuminado y aterciopelado, proporcionando color ligero de larga duración sin transferir ni resecar.",
+    "img": "MAYBELLINE TEDDY TINT PINKY PROMISE.png", "price": 360,
+    "shades": [{"name": "Pinky Promise", "img": "MAYBELLINE TEDDY TINT PINKY PROMISE.png"}]
+  },
+  {
+    "id": "mascara elf", "cat": "ojos", "label": "Ojos", "name": "Mascaras e.l.f",
+    "desc": "Máscaras de pestañas de alto impacto que ofrecen desde volumen extremo y rizado hasta alargamiento tipo extensión, con fórmulas duraderas y resistentes a manchas.",
+    "img": "ELF LASH XTNDR MASCARA PITCH BLACK.webp", "price": 340,
+    "shades": [
+      {"name": "Lash XTNDR Pitch Black", "img": "ELF LASH XTNDR MASCARA PITCH BLACK.webp"},
+      {"name": "Big Mood Deep Brown", "img": "ELF BIG MOOD MASCARA DEEP BROWN.webp"},
+      {"name": "Lash It Loud", "img": "ELF LASH IT LOUD MASCARA BLACK.webp"}
+    ]
+  },
+  {
+    "id": "alcohol", "cat": "alcohol", "label": "Sanitizantes", "name": "Bath & Body Works Hand Sanitizer",
+    "desc": "Gel antibacterial en formato de bolsillo (PocketBac) enriquecido con aceites esenciales, extracto de karité y vitamina E que elimina el 99.9% de los gérmenes más comunes, dejando las manos limpias, suaves y delicadamente perfumadas.",
+    "img": "B&B CHAMPAGNE TOAST.webp", "price": 150,
+    "shades": [
+      {"name": "Champagne Toast", "img": "B&B CHAMPAGNE TOAST.webp"},
+      {"name": "Japanese Cherry Blossom", "img": "B&B JAPANESE CHERRY BLOSSOM.webp"},
+      {"name": "Strawberry Pound Cake", "img": "B&B STRAWBERRY POUND CAKE.png"},
+      {"name": "Cozy Winter Cottage", "img": "B&B COZY WINTER COTTAGE.png"},
+      {"name": "Eucalyptus + Spearmint", "img": "B&B EUCALYPTUS.png"},
+      {"name": "Cranberry & Eucalyptus", "img": "B&B CRANBERRY & EUCALYPTUS.png"}
+    ]
+  }
+]
