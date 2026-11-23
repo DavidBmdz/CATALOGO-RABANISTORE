@@ -87,5 +87,3 @@ dialog{width:min(850px,92vw);border:0;border-radius:8px;padding:0;background:var
 #detail .recommendation-section,#detail #recommendations{min-width:0;max-width:100%}
 #detail #recommendations{overflow-x:auto}
 @media(max-width:760px){#detail[open]{grid-template-columns:minmax(0,1fr)}#detail .detail-image{min-height:240px;max-height:280px}#detailImage img{max-width:min(100%,320px);max-height:240px;padding:16px}}
-#downloadReceipt[hidden]{display:none}
-#generateReceipt:disabled{opacity:.65;cursor:wait}

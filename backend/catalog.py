@@ -3,11 +3,11 @@
 import json
 from pathlib import Path
 
-from .category_tree import CategoryTree
-from .doubly_linked_list import DoublyLinkedCart
-from .linked_list import SinglyLinkedHistory
-from .recommendation_graph import RecommendationGraph
-from .stack_queue import Queue, Stack
+from category_tree import CategoryTree
+from doubly_linked_list import DoublyLinkedCart
+from linked_list import SinglyLinkedHistory
+from recommendation_graph import RecommendationGraph
+from stack_queue import Queue, Stack
 
 
 DATA_FILE = Path(__file__).with_name("products.json")

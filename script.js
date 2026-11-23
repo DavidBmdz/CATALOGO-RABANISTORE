@@ -203,29 +203,6 @@ async function addCurrentProduct() {
   }
 }
 
-async function generateReceipt() {
-  const button = document.querySelector("#generateReceipt");
-  const download = document.querySelector("#downloadReceipt");
-  const hint = document.querySelector("#receiptHint");
-  button.disabled = true;
-  button.textContent = "Generando recibo...";
-  download.hidden = true;
-  try {
-    const result = await requestJSON("/api/receipt", {
-      method: "POST", body: JSON.stringify({ session: sessionId })
-    });
-    download.href = result.receipt_url;
-    download.hidden = false;
-    hint.textContent = `¡Recibo ${result.order_number} listo! Descárgalo y adjúntalo en tu mensaje de Instagram.`;
-    download.click();
-  } catch (error) {
-    hint.textContent = error.message;
-  } finally {
-    button.disabled = false;
-    button.textContent = "Generar recibo PNG";
-  }
-}
-
 async function recordCartInquiries() {
   try {
     const items = await requestJSON(`/api/cart?session=${encodeURIComponent(sessionId)}`);
@@ -323,7 +300,6 @@ document.querySelector("#consultInstagram").addEventListener("click", () => {
   }).catch(() => {});
 });
 document.querySelector("#cartInstagram").addEventListener("click", recordCartInquiries);
-document.querySelector("#generateReceipt").addEventListener("click", generateReceipt);
 
 document.querySelector(".close").addEventListener("click", () => detailDialog.close());
 detailDialog.addEventListener("click", event => {
