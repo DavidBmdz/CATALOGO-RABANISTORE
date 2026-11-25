@@ -300,6 +300,13 @@ document.querySelector("#consultInstagram").addEventListener("click", () => {
   }).catch(() => {});
 });
 document.querySelector("#cartInstagram").addEventListener("click", recordCartInquiries);
+document.querySelector("#generateReceipt").addEventListener("click", async () => {
+  const result = await requestJSON("/api/receipt", { method: "POST", body: JSON.stringify({ session: sessionId }) });
+  const link = document.querySelector("#downloadReceipt");
+  link.href = result.receipt_url;
+  link.hidden = false;
+  link.click();
+});
 
 document.querySelector(".close").addEventListener("click", () => detailDialog.close());
 detailDialog.addEventListener("click", event => {

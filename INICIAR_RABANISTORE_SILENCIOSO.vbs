@@ -33,7 +33,7 @@ If started Then
     shell.Run url, 1, False
 Else
     MsgBox "No se pudo iniciar Rabanistore." & vbCrLf & vbCrLf & _
-           "Comprueba que Python esté instalado, que Pillow esté instalado " & _
+           "Comprueba que Python esté instalado " & _
            "y que el puerto 8000 esté libre." & vbCrLf & vbCrLf & _
            "Para instalar dependencias, abre una terminal en esta carpeta " & _
            "y ejecuta: py -m pip install -r requirements.txt", _

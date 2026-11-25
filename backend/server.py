@@ -2,15 +2,19 @@
 
 import json
 import mimetypes
+from datetime import datetime
 from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from urllib.parse import parse_qs, unquote, urlparse
 
 from catalog import CatalogStore
+from receipt_png import create_receipt
 
 
 WEB_ROOT = Path(__file__).resolve().parent.parent
 STORE = CatalogStore()
+RECEIPTS_DIR = WEB_ROOT / "receipts"
+RECEIPTS_DIR.mkdir(exist_ok=True)
 mimetypes.add_type("image/avif", ".avif")
 
 
@@ -92,6 +96,15 @@ class RequestHandler(BaseHTTPRequestHandler):
         try:
             body = self._read_json()
             session_id = self._session(query, body)
+            if path == "/api/receipt":
+                items = STORE.cart_items(session_id)
+                if not items:
+                    raise ValueError("La bolsa está vacía.")
+                order = datetime.now().strftime("RB-%y%m%d-%H%M%S")
+                filename = f"{order}.png"
+                total = create_receipt(items, RECEIPTS_DIR / filename, order, datetime.now().strftime("%d/%m/%Y %H:%M"))
+                self._json({"order_number": order, "total": total, "receipt_url": f"/receipts/{filename}"}, 201)
+                return
             if path == "/api/history":
                 product_id = str(body.get("product_id", ""))
                 if not STORE.get_product(product_id):

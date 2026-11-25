@@ -34,7 +34,7 @@ Instagram: [@rabanistore](https://www.instagram.com/rabanistore/)
 - **HTML:** estructura de la interfaz.
 - **CSS:** presentación visual y estilos.
 - **JavaScript:** interacción de la página y comunicación con la API.
-- **Pillow:** generación de imágenes PNG.
+- **Python estándar:** generación de recibos PNG sin paquetes externos.
 - **JSON:** almacenamiento de los datos del catálogo.
 - **VBScript (VBS):** iniciador opcional para ejecutar el servidor Python sin mostrar una ventana de consola en Windows.
 
@@ -45,7 +45,7 @@ Instagram: [@rabanistore](https://www.instagram.com/rabanistore/)
 - `pip` disponible desde el lanzador `py`.
 - Navegador web actualizado.
 
-La dependencia Python declarada por el proyecto es Pillow, incluida en `requirements.txt`.
+El proyecto no requiere paquetes Python externos.
 
 ## Instalación
 

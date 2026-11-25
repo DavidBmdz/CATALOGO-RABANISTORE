@@ -2,7 +2,7 @@
 
 ## Ejecutar la aplicación
 
-Requiere Python 3.9 o superior y Pillow para generar recibos PNG. Instálalo una vez desde PowerShell con `py -m pip install Pillow`. Después, desde la carpeta del proyecto, ejecuta:
+Requiere Python 3.9 o superior. No necesita paquetes externos. Desde la carpeta del proyecto, ejecuta:
 
 ```powershell
 py -m backend.server
