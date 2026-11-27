@@ -1,0 +1,68 @@
+:root {
+  color-scheme: light;
+  --ink: #302526;
+  --muted: #74686a;
+  --paper: #fffaf8;
+  --card: #ffffff;
+  --rose: #a74763;
+  --rose-dark: #84334c;
+  --line: #eadbdd;
+  --soft-rose: #f8eaed;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--paper); color: var(--ink); }
+.page { width: min(1080px, calc(100% - 36px)); margin: 0 auto; padding: 34px 0 72px; }
+.page-header { padding: 12px 0 28px; }
+.back-link { color: var(--rose-dark); text-decoration: none; font-weight: 650; }
+.back-link:hover { text-decoration: underline; }
+.eyebrow { margin: 26px 0 8px; color: var(--rose); font-size: .76rem; font-weight: 750; letter-spacing: .15em; }
+h1, h2, p { margin-top: 0; }
+h1 { margin-bottom: 10px; font-family: Georgia, serif; font-size: clamp(2.2rem, 6vw, 3.4rem); font-weight: 500; }
+.intro { max-width: 680px; color: var(--muted); line-height: 1.6; }
+code { padding: 2px 6px; border-radius: 5px; background: var(--soft-rose); color: var(--rose-dark); }
+.upload-panel, .data-section, .metric-card { border: 1px solid var(--line); border-radius: 14px; background: var(--card); box-shadow: 0 8px 24px #63313c0a; }
+.upload-panel { display: grid; grid-template-columns: 1fr auto; gap: 8px 20px; align-items: center; padding: 22px; }
+.upload-panel h2, .data-section h2 { margin-bottom: 5px; font-size: 1.1rem; }
+.upload-panel p { margin-bottom: 0; color: var(--muted); font-size: .92rem; }
+#reportFile { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0, 0, 0, 0); }
+.file-picker { grid-column: 2; grid-row: 1 / span 2; padding: 12px 17px; border-radius: 9px; background: var(--rose); color: #fff; cursor: pointer; font-weight: 700; }
+.file-picker:hover { background: var(--rose-dark); }
+.file-actions { grid-column: 2; grid-row: 1 / span 2; display: flex; flex-wrap: wrap; justify-content: end; gap: 8px; }
+.file-actions .file-picker { grid-column: auto; grid-row: auto; }
+.clear-button { padding: 11px 14px; border: 1px solid var(--line); border-radius: 9px; background: #fff; color: var(--rose-dark); cursor: pointer; font: inherit; font-weight: 650; }
+.clear-button:disabled { cursor: not-allowed; opacity: .5; }
+.file-name, .message { grid-column: 1 / -1; min-height: 1.25em; }
+.file-name { margin-top: 12px; }
+.message { color: var(--rose-dark) !important; }
+.report-heading { display: flex; justify-content: space-between; align-items: end; gap: 16px; margin: 34px 0 18px; }
+.report-heading .eyebrow { margin-top: 0; }
+.report-heading h2 { margin: 0; font-family: Georgia, serif; font-size: 1.8rem; font-weight: 500; overflow-wrap: anywhere; }
+.run-time { color: var(--muted); font-size: .9rem; text-align: right; }
+.metric-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; }
+.metric-card { min-height: 106px; padding: 17px; }
+.metric-label { display: block; margin-bottom: 12px; color: var(--muted); font-size: .82rem; }
+.metric-value { display: block; font-size: 1.45rem; font-weight: 750; overflow-wrap: anywhere; }
+.data-section { margin-top: 18px; padding: 20px; }
+.data-section h2 { margin-bottom: 14px; }
+.chart-frame { width: 100%; overflow-x: auto; }
+.chart-frame canvas { display: block; max-width: none; }
+.table-wrap { overflow-x: auto; }
+table { width: 100%; border-collapse: collapse; text-align: left; }
+th, td { padding: 11px 10px; border-bottom: 1px solid var(--line); vertical-align: top; }
+th { color: var(--muted); font-size: .78rem; font-weight: 700; letter-spacing: .04em; }
+tbody tr:last-child td { border-bottom: 0; }
+td:last-child { overflow-wrap: anywhere; }
+.empty-state { margin: 12px 0 0; color: var(--muted); }
+.scope-note { margin: 18px 2px 0; color: var(--muted); font-size: .9rem; line-height: 1.5; }
+[hidden] { display: none !important; }
+
+@media (max-width: 700px) {
+  .page { width: min(100% - 24px, 1080px); padding-top: 22px; }
+  .upload-panel { grid-template-columns: 1fr; }
+  .file-actions { grid-column: auto; grid-row: auto; justify-content: start; }
+  .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .report-heading { align-items: start; flex-direction: column; }
+  .run-time { text-align: left; }
+}

@@ -1,0 +1,27 @@
+{
+  "started_at_utc": "2026-11-27T01:20:15.742091+00:00",
+  "target": "http://127.0.0.1:8000",
+  "virtual_users": 200000,
+  "concurrency": 5,
+  "requests_per_user": 4,
+  "completed_users": 200000,
+  "requests": 800000,
+  "elapsed_seconds": 2643.92,
+  "requests_per_second": 302.58,
+  "latency_ms": {
+    "mean": 15.82,
+    "p50": 15.22,
+    "p95": 30.44,
+    "p99": 42.5,
+    "max": 239.16,
+    "percentile_sample_size": 100000
+  },
+  "status_counts": {
+    "200": 800000
+  },
+  "error_count": 0,
+  "network_error_types": {},
+  "sample_errors": [],
+  "scope_note": "Usuarios virtuales acumulados con concurrencia limitada; no equivale a usuarios simultáneos.",
+  "write_state": false
+}

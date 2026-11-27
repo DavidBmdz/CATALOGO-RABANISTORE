@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Visor local de reportes JSON de pruebas de carga Rabanistore">
+  <title>Reportes de carga | Rabanistore</title>
+  <link rel="stylesheet" href="reportes.css">
+</head>
+<body>
+  <main class="page">
+    <header class="page-header">
+      <a class="back-link" href="/">← Volver al catálogo</a>
+      <p class="eyebrow">RABANISTORE · HERRAMIENTAS</p>
+      <h1>Reportes de carga</h1>
+      <p class="intro">Carga uno o varios archivos JSON de <code>backend/load_test.py</code> para comparar métricas, respuestas y errores.</p>
+    </header>
+
+    <section class="upload-panel" aria-labelledby="upload-title">
+      <div>
+        <h2 id="upload-title">Selecciona reportes</h2>
+        <p>Puedes seleccionar varios archivos a la vez o añadir más después. Se procesan en este navegador.</p>
+      </div>
+      <div class="file-actions">
+        <label class="file-picker" for="reportFile">Añadir archivos JSON</label>
+        <button id="clearReports" class="clear-button" type="button" disabled>Limpiar selección</button>
+      </div>
+      <input id="reportFile" type="file" accept=".json,application/json" multiple>
+      <p id="fileName" class="file-name">Ningún archivo seleccionado</p>
+      <p id="message" class="message" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="report" hidden aria-live="polite">
+      <div class="report-heading">
+        <div><p class="eyebrow">COMPARACIÓN</p><h2>Cómo cambia con la carga</h2></div>
+        <span class="run-time">Cada punto representa un reporte cargado</span>
+      </div>
+      <section class="data-section chart-section">
+        <h2>Solicitudes por segundo</h2>
+        <div class="chart-frame"><canvas id="rpsChart" height="300" aria-label="Gráfica de solicitudes por segundo según usuarios virtuales"></canvas></div>
+      </section>
+      <section class="data-section chart-section">
+        <h2>Latencia p95 y p99 (ms)</h2>
+        <div class="chart-frame"><canvas id="latencyChart" height="300" aria-label="Gráfica comparativa de latencia según usuarios virtuales"></canvas></div>
+      </section>
+      <section class="data-section chart-section">
+        <h2>Porcentaje de errores</h2>
+        <div class="chart-frame"><canvas id="errorChart" height="300" aria-label="Gráfica del porcentaje de errores según usuarios virtuales"></canvas></div>
+      </section>
+      <section class="data-section">
+        <h2>Comparación de reportes</h2>
+        <div class="table-wrap"><table><thead><tr>
+          <th>Archivo</th><th>Usuarios virtuales</th><th>Concurrencia</th><th>Solicitudes/s</th><th>p95 (ms)</th><th>p99 (ms)</th><th>Errores (%)</th>
+        </tr></thead><tbody id="comparisonRows"></tbody></table></div>
+      </section>
+
+      <div class="report-heading">
+        <div><p class="eyebrow">DETALLE DEL ÚLTIMO ARCHIVO CARGADO</p><h2 id="reportTitle">Reporte</h2></div>
+        <span id="runTime" class="run-time"></span>
+      </div>
+      <div id="metricCards" class="metric-grid"></div>
+
+      <section class="data-section">
+        <h2>Respuestas HTTP</h2>
+        <div class="table-wrap"><table><thead><tr><th>Código</th><th>Solicitudes</th></tr></thead><tbody id="statusRows"></tbody></table></div>
+      </section>
+
+      <section class="data-section">
+        <h2>Errores de red por tipo</h2>
+        <div class="table-wrap"><table><thead><tr><th>Tipo</th><th>Cantidad</th></tr></thead><tbody id="errorTypeRows"></tbody></table></div>
+        <p id="noNetworkErrors" class="empty-state" hidden>El reporte no registra errores de red.</p>
+      </section>
+
+      <section class="data-section">
+        <h2>Ejemplos de errores</h2>
+        <div class="table-wrap"><table><thead><tr><th>#</th><th>Detalle</th></tr></thead><tbody id="sampleErrorRows"></tbody></table></div>
+        <p id="noSampleErrors" class="empty-state" hidden>No hay errores de muestra en este reporte.</p>
+      </section>
+      <p id="scopeNote" class="scope-note"></p>
+    </section>
+  </main>
+  <script src="reportes.js"></script>
+</body>
+</html>
