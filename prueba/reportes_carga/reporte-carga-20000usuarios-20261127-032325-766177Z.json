@@ -1,0 +1,51 @@
+{
+  "started_at_utc": "2026-11-27T03:23:25.766177+00:00",
+  "target": "http://127.0.0.1:8000",
+  "virtual_users": 20000,
+  "concurrency": 1000,
+  "requests_per_user": 4,
+  "completed_users": 20000,
+  "requests": 80000,
+  "elapsed_seconds": 132.84,
+  "requests_per_second": 602.25,
+  "latency_ms": {
+    "mean": 1391.89,
+    "p50": 2041.29,
+    "p95": 2423.53,
+    "p99": 2864.09,
+    "max": 4541.53,
+    "percentile_sample_size": 80000
+  },
+  "status_counts": {
+    "200": 32572,
+    "network_error": 47428
+  },
+  "error_count": 47428,
+  "network_error_types": {
+    "URLError": 47428
+  },
+  "sample_errors": [
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>",
+    "URLError: <urlopen error [WinError 10061] No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión>"
+  ],
+  "scope_note": "Usuarios virtuales acumulados con concurrencia limitada; no equivale a usuarios simultáneos.",
+  "write_state": false
+}
